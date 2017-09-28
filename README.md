@@ -34,4 +34,26 @@ This application requires the [python-mailchimp-api](https://github.com/charlest
 
 #### Install mailchimp3
 ***There is a known issue with the latest version of `mailchiimp3`. Use version 2.0.11***
+
 `pip install mailchimp3==2.0.11`
+
+## Install e2mc
+1. Download or clone the repository.
+2. Edit `elexio.py` and update the `elexio_url`, `elexio_userid`, and `elexio_passwd` variables at the top of the file.
+3. Edit `mailchimp.py` and update the `client` and `list_id` variables at the top of the file.
+
+## Run e2mc
+To manually run the application:
+
+`python main.py`
+
+A log file, `e2mc.log` will be created and appended to with each run showing details about emails that were found and whether they were added or removed to the segment in MailChimp.
+
+Once you have successfully run the application manually and are happy with it, I would recommend you setup a scheduled run of the application via cron. I run it every 2 minutes to keep MailChimp up to date as much as possible.
+
+## Known Issues
+- The default configuration of the application is to create a segment in MailChimp if a group is found in Elexio. The application will not remove segments found in MailChimp but not in Elexio. This will allow you to create and use auto segments in MailChimp. If you would prefer to have the segments automatically removed, edit `main.py` and search for `Uncomment`. You will find the section that you can enable to do the removes.
+- There is an issue with email addresses that are not all lowercase when trying to add them to a segment. You will see these logged as "not in Mailchimp" in the `e2mc.log` file. At this point, the fix is to change the email to all lowercase in Elexio.
+
+## Licence
+`e2mc` is licensed under GPLv3. Copyright (c) 2017 ThornCreek Church
