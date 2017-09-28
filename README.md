@@ -1,2 +1,2 @@
 # e2mc
-Elexio Community Group sync to MailChimp
+e2mc is a tool that will allow you to sync Elexio Community groups to a single MailChimp list as segments.
