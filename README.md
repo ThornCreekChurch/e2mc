@@ -14,7 +14,7 @@ You must have an account in MailChimp with an API key. The key can be created un
 You will need your List ID. This can be found under the List -> Settings menu.
 
 ### Elexio Community
-You will need your Elexio Community API URL. The URL is usually `https://YOUR_SHORT_NAME.elexiochms.com:443/api`. Contact Elexio support if you need help identifying your API URL.
+You will need an Elexio Community API Session ID. You can obtain the Session ID from the API documention site.  The URL is usually `https://YOUR_SHORT_NAME.elexiochms.com/api_documentation#!/user/userLogin_post_0`. Contact Elexio support if you need help identifying your API URL.
 
 You will need a username and password that will have access to the groups that you want to sync as segments. I recommend you create an "API User" that is only used for this purpose.
 
