@@ -39,7 +39,7 @@ This application requires the [python-mailchimp-api](https://github.com/charlest
 
 ## Install e2mc
 1. Download or clone the repository.
-2. Edit `elexio.py` and update the `elexio_url`, `elexio_userid`, and `elexio_passwd` variables at the top of the file.
+2. Edit `elexio.py` and update the `elexio_session_id` variable at the top of the file.
 3. Edit `mailchimp.py` and update the `client` and `list_id` variables at the top of the file.
 
 ## Run e2mc
