@@ -23,8 +23,18 @@ import requests
 import log
 
 elexio_url    = "YOUR_ELEXIO_API_URL"
-elexio_userid = "YOUR_ELEXIO_API_USER"
-elexio_passwd = "YOUR_ELEXIO_API_PASSWORD"
+
+# Reomved the use of the userID and password to get a new session ID every run.
+#   Instead, visit your api section and get your session ID. Go to:
+#   https://YOURCHURCH.elexiochms.com/api_documentation#!/user/userLogin_post_0
+#   Login with our ID for the API and get the session ID. Then put it in the
+#   Variable below.
+#
+#   I have left the old code in case you want to use it for some reason.
+
+#elexio_userid = "YOUR_ELEXIO_API_USER"
+#elexio_passwd = "YOUR_ELEXIO_API_PASSWORD"
+elexio_session_id = "YOUR_ELEXIO_API_SESSION_ID"
 
 # This automation is a quick utility and therefore does not assume any changes
 #   will be made while it's running.  To speed up the process even further, it
@@ -33,16 +43,16 @@ elexio_passwd = "YOUR_ELEXIO_API_PASSWORD"
 #   while this is running is very low, and even if such a change does occur, it
 #   will be picked up next time it runs.
 
-session_id = None
+session_id = elexio_session_id
 groups = []
 group_members = {}
 
-def init():
-    global session_id
-    session_params = { "username": elexio_userid, "password": elexio_passwd }
-    session = requests.get((elexio_url + "/user/login"), params=session_params)
-    session_id = session.json()['data']['session_id']
-    return True
+#def init():
+    #global session_id
+    #session_params = { "username": elexio_userid, "password": elexio_passwd }
+    #session = requests.get((elexio_url + "/user/login"), params=session_params)
+    #session_id = session.json()['data']['session_id']
+    #return True
 
 
 def get_groups():

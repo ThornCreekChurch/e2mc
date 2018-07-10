@@ -131,7 +131,7 @@ if len(sys.argv) > 1:
 if(debug):
     log.e2mclog("Debug mode enabled.")
 
-elexio.init()
+#elexio.init()
 mailchimp.init()
 egroups = elexio.get_groups()
 if(debug):
