@@ -51,7 +51,7 @@ Python 2.7.9
 ```
 
 #### Python
-This application is written in Python. It has been tested successfully with using Python 2.7.13 and 3.5.3.
+This application is written in Python. It has been tested successfully with using Python 2.7.9, 2.7.13, and 3.5.3.
 
 This application requires the [python-mailchimp-api](https://github.com/charlesthk/python-mailchimp) (`mailchimp3`) library.
 
