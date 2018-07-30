@@ -25,7 +25,8 @@ I recommend that you first create a permission role called "API Access". It need
 I have tested and run this sync program on a Linux system (Fedora 24), however it should run on any system that can run Python applications. As I get more feedback on successful tests, I will add the OS to the list below.
 
 Tested Operating Systems:
-- ```# lsb_release -a
+- ```
+# lsb_release -a
 LSB Version:	:core-4.1-amd64:core-4.1-noarch
 Distributor ID:	Fedora
 Description:	Fedora release 24 (Twenty Four)
@@ -34,8 +35,10 @@ Codename:	TwentyFour
 # uname -a
 Linux virt-host.tcoffice.thorncreek.net 4.8.12-200.fc24.x86_64 #1 SMP Fri Dec 2 18:45:50 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 # python --version
-Python 2.7.13```
-- ```# lsb_release -a
+Python 2.7.13
+```
+- ```
+# lsb_release -a
 No LSB modules are available.
 Distributor ID:	Debian
 Description:	Debian GNU/Linux 8.9 (jessie)
@@ -44,7 +47,8 @@ Codename:	jessie
 # uname -a
 Linux www 4.15.13-x86-linode125 #1 SMP Tue Mar 27 15:12:07 UTC 2018 i686 GNU/Linux
 # python --version
-Python 2.7.9```
+Python 2.7.9
+```
 
 #### Python
 This application is written in Python. It has been tested successfully with using Python 2.7.13 and 3.5.3.
