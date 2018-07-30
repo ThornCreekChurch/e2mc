@@ -79,10 +79,10 @@ def get_group_email_list(group):
     global group_members
     global session_id
 
+    e = []
     if not group['name'] in group_members:
         groups_params = { "session_id": session_id }
         people = requests.get(elexio_url + "/groups/" + str(group['gid']) + "/people", params=groups_params).json()['data']
-        e = []
         for letter in people:
             for entry in people[letter]:
                 if(not entry['mail'] == ""):
