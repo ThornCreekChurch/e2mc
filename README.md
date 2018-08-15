@@ -56,7 +56,7 @@ This application is written in Python. It has been tested successfully with usin
 This application requires the [python-mailchimp-api](https://github.com/charlesthk/python-mailchimp) (`mailchimp3`) library.
 
 #### Install mailchimp3
-***There is a known issue with the latest version of `mailchiimp3`. Use version 2.0.11***
+***There is a known issue with the latest version of `mailchimp3`. Use version 2.0.11***
 
 `pip install mailchimp3==2.0.11`
 
