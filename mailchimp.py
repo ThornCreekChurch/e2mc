@@ -24,7 +24,7 @@ import json
 import log
 import hashlib
 
-client = MailChimp('YOUR_MC_USER', 'YOUR_MC_API_KEY')
+client = MailChimp(mc_api='YOUR_MC_API_KEY', mc_user='YOUR_MC_USER')
 list_id = 'YOUR_MC_LIST_ID'
 
 # Using the term "groups" in this module to keep the API between the elexio &
